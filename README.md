@@ -1,75 +1,36 @@
-# Buddies-party-resturant
-A Buddies party restaurant fully automations 
-
-# Autonomous Voice-Driven Restaurant Assistant System
-
-## Project Overview
-
-This repository contains the implementation of a fully autonomous AI-driven system designed to enhance customer service in a restaurant setting. The system automates the entire dining experience, from greeting customers to handling billing, using voice and visual interactions.
-
-### Key Features
-- **Greeting Agent**: Welcomes customers with voice-based greetings.
-- **Menu Agent**: Presents the menu via voice and visual display.
-- **Order Agent**: Takes customer orders through voice input and converts them to structured JSON.
-- **Dispatch Agent**: Forwards orders to the desk officer in real-time.
-- **Kitchen Agent**: Sends orders to the chef's terminal.
-- **Entertainment Agent**: Engages customers with media (e.g., YouTube/Spotify) while they wait.
-- **Billing Agent**: Generates QR/UPI invoices and provides a voice summary of the bill.
-
-## Technical Stack
-
-| Layer                | Tools/Technologies                     |
-|----------------------|---------------------------------------|
-| Voice Input          | OpenAI Whisper, SpeechRecognition      |
-| Voice Output         | gTTS, ElevenLabs                      |
-| AI Logic             | LangChain, OpenAI Functions, CrewAI   |
-| Backend              | Python + FastAPI                      |
-| Frontend             | Next.js / React.js                    |
-| Realtime Messaging   | WebSockets, Socket.io                 |
-| Database             | MongoDB                               |
-| Optional Hardware    | Raspberry Pi, USB Microphone, Tablet Screen |
-
-## Architecture Overview
-
-The system is modular, with distinct agents handling specific tasks:
-1. **Greeting Agent**: Voice-based customer welcome.
-2. **Menu Agent**: Displays and explains the menu (JSON-based).
-3. **Order Agent**: Processes voice orders into structured JSON.
-4. **Dispatch Agent**: Real-time order forwarding to the desk officer.
-5. **Kitchen Agent**: Communicates orders to the chef's terminal.
-6. **Entertainment Agent**: Plays media during wait times.
-7. **Billing Agent**: Handles invoice generation and voice-based billing summary.
-
-## Implementation Roadmap
-
-| Phase                     | Description                              | Duration       |
-|---------------------------|------------------------------------------|----------------|
-| Phase 1                   | Core voice greeting and menu display      | -              |
-| Phase 2                   | Voice-based order processing             | -              |
-| Phase 3                   | (Details incomplete in document)         | -              |
-| Phase 4                   | -                                        | 4 days         |
-| Phase 5                   | -                                        | 4 days         |
-| Phase 6                   | -                                        | 5 days         |
-| Final Review & Revisions  | Final testing and adjustments            | 3 days         |
-| **Total Estimated Time**  |                                          | **4-5 weeks**  |
-
-*Note*: Some phase details are incomplete in the provided document.
-
-## Future Enhancements
-- Multilingual support for broader accessibility.
-- Facial recognition for personalized customer greetings.
-- Mobile app version for remote interaction.
-- Data analytics dashboard for restaurant insights.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-### Prerequisites
-- Python 3.x
-- Node.js (for frontend)
-- MongoDB
-- Optional: Raspberry Pi, USB Microphone, Tablet Screen
+First, run the development server:
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/[your-username]/autonomous-restaurant-assistant.git
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
